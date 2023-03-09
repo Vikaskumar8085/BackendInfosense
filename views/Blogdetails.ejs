@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    <style>
+        .container2 img{
+            background-color: azure;
+            display: block;
+        }
+        .class1 h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            color: hwb(0 6% 93%);
+        }
+    </style>
+</head>
+<body>
+    {{>Blogdetails Blogdetail= Blogdetail}}
+    {{!-- <h1>Blog Detail</h1> --}}
+    <h2>{{Blogdetail.name}}</h2>
+    <div class="container2">
+        <img src={{Blogdetails.imgurl}}>
+        
+    </div>
+    <div class="class1">
+        <h1>{{Blogdetail.post}}</h1>
+    </div>
+</body>
+</html>
